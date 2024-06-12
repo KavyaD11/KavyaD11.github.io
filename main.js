@@ -4,7 +4,7 @@ var data = [
     sellernum: "+91316803889",
     product: "Pentonic Pens",
     price: "100",
-    image1: "\STUDYSWAP\image5.jpg",
+    image1: "https://images.olx.com.pk\STUDYSWAP\image5.jpg",
     description:
       "Pentonic pens 10 colour, smooth writing and bright colours. Must try for good and colourful notes. contact on the number.",
     postTime: "Mumbai. 3 mins ago",
