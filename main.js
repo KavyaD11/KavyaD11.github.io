@@ -1,14 +1,35 @@
-var data = [
-  {
-    sellername: "Keya",
-    sellernum: "+91316803889",
-    product: "Pentonic Pens",
-    price: "100",
-    image1: "https://image.com/STUDYSWAP/image5.jpg",
-    description:
-      "Pentonic pens 10 colour, smooth writing and bright colours. Must try for good and colourful notes. contact on the number.",
-    postTime: "Mumbai. 3 mins ago",
-  },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <style>
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 16px;
+      width: 300px;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <h2>Seller: Keya</h2>
+    <p>Contact: +91316803889</p>
+    <p>Product: Pentonic Pens</p>
+    <p>Price: $100</p>
+    <img src="\STUDYSWAP\image5.jpg" alt="Pentonic Pens">
+    <p>Description: Pentonic pens 10 colour, smooth writing and bright colours. Must try for good and colourful notes. Contact on the number.</p>
+    <p>Post Time: Mumbai. 3 mins ago</p>
+  </div>
+</body>
+</html>
+
   {
     sellername: "OLX User",
     sellernum: "+91312345889",
