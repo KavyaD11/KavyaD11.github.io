@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image 2.jpg" style="width: 100px; height: 100px;">
+  <title>StudySwap</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image 2.jpg" alt="StudySwap Logo" style="width: 30px; height: 30px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">TEXTBOOKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">STUDY MATERIALS</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search Location" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Find Textbooks, Study Materials and More..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="./login.html" class="btn btn-outline-primary ms-2">Login</a>
+        <button class="btn btn-outline-danger ms-2" onclick="forSell()">SELL</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Categories -->
+  <div class="container my-4">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        ALL CATEGORIES
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Reference Books</a></li>
+        <li><a class="dropdown-item" href="#">Calculators</a></li>
+        <li><a class="dropdown-item" href="#">Pens</a></li>
+        <li><a class="dropdown-item" href="#">Sticky Notes</a></li>
+        <li><a class="dropdown-item" href="#">Note Books</a></li>
+        <li><a class="dropdown-item" href="#">Stationaries</a></li>
+      </ul>
+    </div>
+    <ul class="nav mt-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Reference Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Calculators</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pens</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sticky Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Note Books</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stationaries</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Products -->
+  <div class="container mt-4" id="product-container">
+    <h4>Fresh recommendations</h4>
+    <div class="row mt-3">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card">
+          <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image3.jpg" class="card-img-top" alt="Spiral Binded Notebook 500 pages" style="width: 500; height: 500px;">
+          <div class="card-body">
+            <p class="card-text">Spiral Binded Notebook 500 pages</p>
+            <h5 class="card-title">Rs. 200</h5>
+            <p class="card-text"><small class="text-muted">Pune. 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card">
+          <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image5.jpg" class="card-img-top" alt="10 Colour Pen Set" style="width: 500; height: 500px;">
+          <div class="card-body">
+            <p class="card-text">10 Colour Pen Set</p>
+            <h5 class="card-title">Rs.100</h5>
+            <p class="card-text"><small class="text-muted">Mumbai. 1 week ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card">
+          <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image8.jpg" class="card-img-top" alt="Aristocrat Backpack" style="width: 500; height: 500px;">
+          <div class="card-body">
+            <p class="card-text">Aristocrat Backpack</p>
+            <h5 class="card-title">Rs.1,500</h5>
+            <p class="card-text"><small class="text-muted">Chatrapati Sambhaji Nagar. 0 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+        <div class="card">
+          <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image11.jpg" class="card-img-top" alt="Scientific Calculator Casio FX-991ES" style="width: 500; height: 500px;">
+          <div class="card-body">
+            <p class="card-text">Scientific Calculator Casio FX-991ES</p>
+            <h5 class="card-title">Rs.1000</h5>
+            <p class="card-text"><small class="text-muted">Nagpur. 45 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid mt-4">
+    <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image 1.jpg" alt="Footer Image" class="img-fluid" style="width: 100%; height: 230px;">
+  </div>
+
+  <div class="container-fluid bg-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-2">
+          <h5>POPULAR CATEGORIES</h5>
+          <p>Reference Books</p>
+          <p>Cool Pens</p>
+          <p>Calculators</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <h5>TRENDING SEARCHES</h5>
+          <p>Textbooks</p>
+          <p>Stationaries</p>
+          <p>Books</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <h5>ABOUT US</h5>
+          <p>About EMPG</p>
+          <p>STUDYSWAP Blog</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <h5>STUDYSWAP</h5>
+          <p>Help</p>
+          <p>Terms of use</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <h5>FOLLOW US</h5>
+          <div>
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-youtube-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark text-white py-2">
+    <div class="container text-center">
+      <p>© 2024 STUDTSWAP</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
