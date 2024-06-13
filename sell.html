@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="icon" href="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image 2.jpg">
-    <title>EVARA-AddPost</title>
+    <title>STUDYSWAP-AddPost</title>
 </head>
 
 <body>
     <div class="container-fluid post">
         <img src="C:\Users\DELL\Downloads\PSP IMAGE\STUDYSWAP\image 2.jpg" alt="STUDYSWAP LOGO" style="width: 100px; height: 100px;">
-        <h3 style="font-family: 'Open Sans', cursive;">POST YOUR AD</h3>
+        <h3 style="font-family: 'Dancing Script', cursive;">POST YOUR AD</h3>
     </div>
     <div class="container ads">
-        <form id="postAdForm">
+        <form id="postAdForm" onsubmit="post(event)">
             <div class="mb-3 row">
                 <label for="sellername" class="col-sm-2 col-form-label">Seller Name</label>
                 <div class="col-sm-10">
@@ -68,38 +68,42 @@
                 </div>
             </div>
             <div class="d-grid">
-                <button type="button" class="btn btn-primary" onclick="postAd()">Post</button>
+                <button type="submit" class="btn btn-primary">Post</button>
             </div>
         </form>
     </div>
     <script>
-        function postAd() {
-            const sellerName = document.getElementById('sellername').value;
-            const sellerNum = document.getElementById('sellernum').value;
-            const productName = document.getElementById('productName').value;
-            const price = document.getElementById('price').value;
-            const location = document.getElementById('Location').value;
-            const productDetail = document.getElementById('productDetail').value;
-            const img1 = document.getElementById('img1').value;
-            const img2 = document.getElementById('img2').value;
-            const img3 = document.getElementById('img3').value;
+        function post(event) {
+            event.preventDefault();
+            var sellerName = document.getElementById("sellername").value;
+            var sellerNum = document.getElementById("sellernum").value;
+            var productTitle = document.getElementById("productName").value;
+            var price = document.getElementById("price").value;
+            var Location = document.getElementById("Location").value;
+            var productDetail = document.getElementById("productDetail").value;
+            var Image1 = document.getElementById("img1").value;
+            var Image2 = document.getElementById("img2").value;
+            var Image3 = document.getElementById("img3").value;
+            var obj = {
+                sellername: sellerName,
+                sellernum: sellerNum,
+                product: productTitle,
+                price: price,
+                image1: Image1,
+                image2: Image2,
+                image3: Image3,
+                description: productDetail,
+                postTime: Location,
+            };
 
-            console.log('Seller Name:', sellerName);
-            console.log('Seller Number:', sellerNum);
-            console.log('Product Name:', productName);
-            console.log('Price:', price);
-            console.log('Location:', location);
-            console.log('Product Details:', productDetail);
-            console.log('Image 1 URL:', img1);
-            console.log('Image 2 URL:', img2);
-            console.log('Image 3 URL:', img3);
-
-            // Here you can add code to send this data to your server or process it as needed
+            var getData = localStorage.getItem("DATA");
+            var Arrangedata = getData ? JSON.parse(getData) : [];
+            Arrangedata.push(obj);
+            localStorage.setItem("DATA", JSON.stringify(Arrangedata));
+            location.href = "index.html";
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-
