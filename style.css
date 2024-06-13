@@ -1,17 +1,3 @@
-.login{
-    margin:  15px auto;
-}
-.login a{
-    color: #002f34 ;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.login a:hover{
-    color: #002f34 ;
-    text-decoration: none;
-}
-
 /* ===============Login page============ */
 #bodylogin{
     display: flex;
