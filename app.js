@@ -98,6 +98,7 @@ function sell() {
   location.href = "sell.html";
 }
 
+
 function forSell() {
   alert("SignIn Required to post your product ads");
 }
