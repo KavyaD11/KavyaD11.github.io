@@ -467,3 +467,52 @@
   <p> <b>Free Classifieds in India.© 2024-2024 EVARA </b> </p>
 </div>
 </div>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+</head>
+
+<body>
+    <h2>User Page</h2>
+    <div id="displayData">
+        <p><strong>Seller Name:</strong> <span id="sellerName"></span></p>
+        <p><strong>Seller Number:</strong> <span id="sellerNumber"></span></p>
+        <p><strong>Product Name:</strong> <span id="productName"></span></p>
+        <p><strong>Price:</strong> <span id="price"></span></p>
+        <p><strong>Location:</strong> <span id="location"></span></p>
+        <p><strong>Product Details:</strong> <span id="productDetail"></span></p>
+        <p><strong>Images:</strong></p>
+        <ul>
+            <li><img src="" id="img1" style="max-width: 200px;"></li>
+            <li><img src="" id="img2" style="max-width: 200px;"></li>
+            <li><img src="" id="img3" style="max-width: 200px;"></li>
+        </ul>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage
+        var sellerName = localStorage.getItem('sellerName');
+        var sellerNumber = localStorage.getItem('sellerNumber');
+        var productName = localStorage.getItem('productName');
+        var price = localStorage.getItem('price');
+        var location = localStorage.getItem('location');
+        var productDetail = localStorage.getItem('productDetail');
+        var img1 = localStorage.getItem('img1');
+        var img2 = localStorage.getItem('img2');
+        var img3 = localStorage.getItem('img3');
+
+        // Display data in the user.html page
+        document.getElementById('sellerName').textContent = sellerName;
+        document.getElementById('sellerNumber').textContent = sellerNumber;
+        document.getElementById('productName').textContent = productName;
+        document.getElementById('price').textContent = price;
+        document.getElementById('location').textContent = location;
+        document.getElementById('productDetail').textContent = productDetail;
+        document.getElementById('img1').src = img1
+     
