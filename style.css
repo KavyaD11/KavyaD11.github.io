@@ -345,3 +345,137 @@ table{
 #prapasslogin{
     font-size: 2vh;
 }
+
+/* =======addpost======== */
+.post{
+    background-color: #dbe2e28a;
+    text-align: center;
+}
+.post img{
+    width: 8vh;
+    height: 6vh;
+    float: left;
+}
+.post h3{
+    font-size: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #002f34;
+}
+.ads{
+    /* border: 2px solid black; */
+    width: 95%;
+    margin:  3vh auto;
+}
+.ROW{
+    /* border: 2px solid black; */
+    display: flex;
+    margin-top: 1vh;
+}
+.col1{
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    width: 30% !important;
+}
+.col1 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #002f34;
+    font-size: 2.5vh;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+.col2{
+    width: 70% !important;
+    /* border: 2px solid black; */
+}
+.col2 input{
+    width: 95%;
+    height: 100%;
+    font-size: 3vh;
+    margin-left: 2.5%;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+}
+
+.col3{
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    width: 30% !important;
+    height: 22vh;
+}
+.col3 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #002f34;
+    font-size: 2.5vh;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    padding-top: 8vh;
+
+}
+.col4{
+    width: 70% !important;
+    height: 22vh;
+    /* border: 2px solid black; */
+}
+.col4 textarea{
+    width: 95%;
+    height: 100%;
+    font-size: 3vh;
+    margin-left: 2.5% ;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+}
+.col4 input{
+    width: 95%;
+    height: 100%;
+    font-size: 3vh;
+    margin-left: 2.5% ;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-top: 0.5%;
+}
+.PostImage{
+    /* border: 2px solid #002f34; */
+    width: 66.4% !important;
+    height: 22vh;
+    border-radius: 5px;
+    margin-left: 1.9% !important ;
+}
+.postimg{
+    margin-top: 2vh;
+    width: 100% !important;
+    margin-left: -0% !important;
+    font-size: 2.5vh !important;
+} 
+.postButton{
+    width: 98%;
+    height: 5vh;
+    border: 2px solid #002f34;
+    margin-top: 3vh;
+    border-radius: 2vh;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #002f34ef;
+}
+.postButton:hover{
+    border: 2px solid #002f34;
+    color: #002f34;
+    background-color: white;
+}
