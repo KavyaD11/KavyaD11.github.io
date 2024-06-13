@@ -25,7 +25,7 @@ function post() {
   Arrangedata.push(obj);
   localStorage.setItem("DATA", JSON.stringify(Arrangedata));
   // console.log(Arrangedata);
-  location.href = "index.html";
+  location.href = "user.html";
   // match = false;
   // sessionStorage.setItem("SetData", JSON.stringify(data));
   // console.log(setdata);
