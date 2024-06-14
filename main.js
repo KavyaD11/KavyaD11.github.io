@@ -25,5 +25,5 @@ function post() {
     localStorage.setItem('postData', JSON.stringify(postData));
 
     // Redirect to user page
-    window.location.href = 'userpage.html';
+    window.location.href = 'user.html';
 }
