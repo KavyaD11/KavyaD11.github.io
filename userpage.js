@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Retrieve data from localStorage
     const postData = JSON.parse(localStorage.getItem('postData'));
+    console.log('Retrieved Post Data:', postData); // Log data to console
 
     if (postData) {
         // Display data
