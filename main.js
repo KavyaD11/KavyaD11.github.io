@@ -21,9 +21,12 @@ function post() {
         images: [img1, img2, img3]
     };
 
+    console.log('Post Data:', postData); // Log data to console
+
     // Save to localStorage
     localStorage.setItem('postData', JSON.stringify(postData));
+    console.log('Data saved to localStorage'); // Confirm data saved
 
     // Redirect to user page
-    window.location.href = 'user.html';
+    window.location.href = 'userpage.html';
 }
